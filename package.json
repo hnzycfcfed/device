@@ -1,0 +1,39 @@
+{
+    "name": "@hnzycfcfed/device",
+    "version": "1.0.0",
+    "description": "移动端系统及浏览器判断",
+    "main": "lib/index.js",
+    "module": "es/index.js",
+    "scripts": {
+        "watch": "rollup -c -w",
+        "build": "NODE_ENV=development rollup -c",
+        "pub": "NODE_ENV=production rollup -c && npm publish --access public"
+    },
+    "keywords": [
+        "device"
+    ],
+    "author": "Thestral.Li",
+    "license": "ISC",
+    "files": [
+        "dist",
+        "lib",
+        "es",
+        "index.d.ts"
+    ],
+    "typings": "index.d.ts",
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^8.2.5",
+        "babel-plugin-external-helpers": "^6.22.0",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-plugin-transform-remove-console": "^6.9.4",
+        "babel-preset-env": "^1.7.0",
+        "eslint": "^5.0.1",
+        "eslint-plugin-babel": "^5.1.0",
+        "eslint-plugin-import": "^2.13.0",
+        "rollup": "^0.62.0",
+        "rollup-plugin-babel": "^3.0.7",
+        "rollup-plugin-eslint": "^4.0.0",
+        "rollup-plugin-uglify": "^4.0.0"
+    }
+}
